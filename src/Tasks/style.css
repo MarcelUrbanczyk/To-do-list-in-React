@@ -1,0 +1,53 @@
+.tasks {
+  padding: 0;
+}
+
+.tasks__task {
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  display: grid;
+  font-size: 18px;
+  margin: 0 20px 0 20px;
+  grid-template-columns: auto 1fr auto;
+}
+
+.tasks__task--lineTrough {
+  text-decoration: line-through;
+}
+
+.tasks__task--hide {
+  display: none;
+}
+
+.tasks__task--markDoneButton {
+  background-color: green;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 30px;
+  margin: 10px;
+  text-decoration: none;
+  width: 30px;
+  transition: 0.3s;
+}
+
+.tasks__task--markDoneButton:hover {
+  background-color: #05aa05;
+}
+
+.tasks__task--removeButton {
+  background-color: #ff0048;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 30px;
+  margin: 10px;
+  width: 30px;
+  transition: 0.3s;
+}
+
+.tasks__task--removeButton:hover {
+  background-color: #b90437;
+}
