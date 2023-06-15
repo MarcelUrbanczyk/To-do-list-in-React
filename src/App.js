@@ -15,14 +15,21 @@ function App() {
   return (
     <main>
       <Header />
-      <Section title="Add new Task" body={<Form />} />
+      <Section 
+      title="Add new Task" 
+      body={<Form />} 
+      />
+
       <Section
         title="Task list"
         extraHeaderContent={
           <Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />
         }
-        body={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
+        body={
+          <Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />
+        }
       />
+      
     </main>
   );
 }
