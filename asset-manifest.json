@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MarcelUrbanczyk/To-do-list-in-React/static/css/main.dc788c4d.css",
-    "main.js": "/MarcelUrbanczyk/To-do-list-in-React/static/js/main.b8f492be.js",
-    "static/js/787.d1b892bc.chunk.js": "/MarcelUrbanczyk/To-do-list-in-React/static/js/787.d1b892bc.chunk.js",
-    "index.html": "/MarcelUrbanczyk/To-do-list-in-React/index.html",
-    "main.dc788c4d.css.map": "/MarcelUrbanczyk/To-do-list-in-React/static/css/main.dc788c4d.css.map",
-    "main.b8f492be.js.map": "/MarcelUrbanczyk/To-do-list-in-React/static/js/main.b8f492be.js.map",
-    "787.d1b892bc.chunk.js.map": "/MarcelUrbanczyk/To-do-list-in-React/static/js/787.d1b892bc.chunk.js.map"
+    "main.css": "/To-do-list-in-React/static/css/main.dc788c4d.css",
+    "main.js": "/To-do-list-in-React/static/js/main.033313b5.js",
+    "static/js/787.d1b892bc.chunk.js": "/To-do-list-in-React/static/js/787.d1b892bc.chunk.js",
+    "index.html": "/To-do-list-in-React/index.html",
+    "main.dc788c4d.css.map": "/To-do-list-in-React/static/css/main.dc788c4d.css.map",
+    "main.033313b5.js.map": "/To-do-list-in-React/static/js/main.033313b5.js.map",
+    "787.d1b892bc.chunk.js.map": "/To-do-list-in-React/static/js/787.d1b892bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dc788c4d.css",
-    "static/js/main.b8f492be.js"
+    "static/js/main.033313b5.js"
   ]
 }
