@@ -7,6 +7,8 @@ It doesn't have interaction at the moment, but I plan to add it in the near futu
 
 [![obraz-2023-06-15-215340188.png](https://i.postimg.cc/KcNS2F0K/obraz-2023-06-15-215340188.png)](https://postimg.cc/5j6k5cd1)
 
+Check out my [project](https://marcelurbanczyk.github.io/To-do-list-in-React/)
+
 ## Technologies
 
 - HTML
