@@ -8,8 +8,8 @@ import Buttons from "./Buttons";
 function App() {
   const [hideDone, setHideDone] = useState(false);
   const [tasks, setTasks] = useState([
-    { id: 1, content: "zjeść sniadanie", done: false },
-    { id: 2, content: "zrobić zadanie domowe", done: true },
+    { id: 1, content: "eat breakfast", done: false },
+    { id: 2, content: "do homework", done: true },
   ]);
 
   const toggleHideDone = () => {
