@@ -30,10 +30,30 @@ function App() {
     );
   };
 
+  const markAllDone = () => {
+    setTasks((tasks) =>
+      tasks.map((task) => ({
+        ...task,
+        done: true,
+      }))
+    );
+  };
+
+  const addNewTask = (content) => {
+    setTasks((tasks) => [
+      ...tasks,
+      {
+        content,
+        done: false,
+        id: tasks.length === 0 ? 1 : tasks[tasks.length - 1].id + 1,
+      },
+    ]);
+  };
+
   return (
     <main>
       <Header />
-      <Section title="Add new Task" body={<Form />} />
+      <Section title="Add new Task" body={<Form addNewTask={addNewTask} />} />
 
       <Section
         title="Task list"
@@ -42,6 +62,7 @@ function App() {
             tasks={tasks}
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
+            markAllDone={markAllDone}
           />
         }
         body={

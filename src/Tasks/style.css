@@ -19,35 +19,30 @@
   display: none;
 }
 
-.tasks__task--markDoneButton {
-  background-color: green;
+.tasks__button {
   border: none;
   color: white;
   cursor: pointer;
   font-size: 18px;
   height: 30px;
   margin: 10px;
-  text-decoration: none;
   width: 30px;
   transition: 0.3s;
 }
 
-.tasks__task--markDoneButton:hover {
+.tasks__button--markDoneButton {
+  background-color: green;
+  text-decoration: none;
+}
+
+.tasks__button--markDoneButton:hover {
   background-color: #05aa05;
 }
 
-.tasks__task--removeButton {
+.tasks__button--removeButton {
   background-color: #ff0048;
-  border: none;
-  color: white;
-  cursor: pointer;
-  font-size: 18px;
-  height: 30px;
-  margin: 10px;
-  width: 30px;
-  transition: 0.3s;
 }
 
-.tasks__task--removeButton:hover {
+.tasks__button--removeButton:hover {
   background-color: #b90437;
 }
