@@ -4,6 +4,8 @@
 
 This is my previous project that I moved to React to learn it.
 It doesn't have interaction at the moment, but I plan to add it in the near future.
+*Update
+Interaction now added!
 
 [![obraz-2023-06-15-215340188.png](https://i.postimg.cc/KcNS2F0K/obraz-2023-06-15-215340188.png)](https://postimg.cc/5j6k5cd1)
 
