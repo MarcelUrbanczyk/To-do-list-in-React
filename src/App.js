@@ -7,14 +7,9 @@ import Buttons from "./Buttons";
 
 function App() {
   const [hideDone, setHideDone] = useState(false);
-  const [tasks, setTasks] = useState(() => {
-    const savedTasks = JSON.parse(localStorage.getItem("tasks"));
-    if (savedTasks === null) {
-      return [];
-    } else {
-      return savedTasks;
-    }
-  });
+  const [tasks, setTasks] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
