@@ -16,7 +16,7 @@ export const Task = styled.li`
     `}
 `;
 
-export const Button = styled.button`
+export const MarkDoneButton = styled.button`
   border: none;
   color: white;
   cursor: pointer;
@@ -25,29 +25,28 @@ export const Button = styled.button`
   margin: 10px;
   width: 30px;
   transition: 0.3s;
-  ${({ markDone }) =>
-    markDone &&
-    css`
-      background-color: green;
-      text-decoration: none;
-      &:hover {
-        background-color: #05aa05;
-      }
-    `}
-  ${({ remove }) =>
-    remove &&
-    css`
-      background-color: #ff0048;
-      &:hover {
-        background-color: #b90437;
-      }
-    `}
+  background-color: green;
+  text-decoration: none;
+  &:hover {
+    background-color: #05aa05;
+  }
+`;
+
+export const DeleteButton = styled.button`
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  height: 30px;
+  margin: 10px;
+  width: 30px;
+  transition: 0.3s;
+  background-color: #ff0048;
+  &:hover {
+    background-color: #b90437;
+  }
 `;
 
 export const Content = styled.span`
-  ${({ done }) =>
-    done &&
-    css`
-      text-decoration: line-through;
-    `}
+  text-decoration: ${({ isDone }) => (isDone ? "line-through" : "none")};
 `;
