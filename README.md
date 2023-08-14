@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my previous project that I moved to React to learn it.
+This is my previous project that I moved to React to learn it. It was my first time using Redux also.
 It doesn't have interaction at the moment, but I plan to add it in the near future.
 *Update
 Interaction now added!
@@ -17,6 +17,7 @@ Check out my [project](https://marcelurbanczyk.github.io/To-do-list-in-React/)
 - CSS
 - JS
 - React
+- Redux
 
 ## Getting Started with Create React App
 
