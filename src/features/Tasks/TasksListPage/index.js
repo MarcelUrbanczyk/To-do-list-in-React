@@ -1,14 +1,14 @@
 import Form from "./Form";
-import Header from "../../common/Header";
-import TaskList from "./TaskList";
-import Section from "../../common/Section";
+import Header from "../../../common/Header";
+import Section from "../../../common/Section";
 import Buttons from "./Buttons";
 import Search from "./Search";
+import TasksList from "../TasksListPage/TaskList";
 
 function Tasks() {
   return (
     <main>
-      <Header />
+      <Header title="Task List" />
       <Section title="Add new Task" body={<Form />} />
 
       <Section title="Search" body={<Search />}></Section>
@@ -16,7 +16,7 @@ function Tasks() {
       <Section
         title="Task list"
         extraHeaderContent={<Buttons />}
-        body={<TaskList />}
+        body={<TasksList />}
       />
     </main>
   );

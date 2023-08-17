@@ -4,10 +4,10 @@ import {
   selectHideDone,
   markDone,
   removeTask,
-} from "../tasksSlice";
+} from "../../tasksSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-const Tasks = () => {
+const TasksList = () => {
   const { tasks } = useSelector(selectTasks);
   const hideDone = useSelector(selectHideDone);
 
@@ -34,4 +34,4 @@ const Tasks = () => {
   );
 };
 
-export default Tasks;
+export default TasksList;
