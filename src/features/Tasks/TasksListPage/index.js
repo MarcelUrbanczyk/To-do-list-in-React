@@ -5,7 +5,7 @@ import Buttons from "./Buttons";
 import Search from "./Search";
 import TasksList from "../TasksListPage/TaskList";
 
-function Tasks() {
+function TasksListPage() {
   return (
     <main>
       <Header title="Task List" />
@@ -22,4 +22,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksListPage;
