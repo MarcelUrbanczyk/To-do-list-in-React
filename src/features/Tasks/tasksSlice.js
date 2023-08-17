@@ -36,6 +36,9 @@ export const selectHideDone = (state) => selectTasks(state).hideDone;
 export const selectAnyUndone = (state) =>
   selectTasks(state).tasks.every(({ done }) => done);
 
+export const getTaskById = (state, id) =>
+  selectTasks(state).tasks.find((task) => task.id === id);
+
 export const { addTask, toggleHideDone, markAllDone, markDone, removeTask } =
   tasksSlice.actions;
 
