@@ -1,4 +1,6 @@
 import { styled, css } from "styled-components";
+import { Link } from "react-router-dom";
+
 export const List = styled.ul`
   padding: 0;
 `;
@@ -49,4 +51,13 @@ export const DeleteButton = styled.button`
 
 export const Content = styled.span`
   text-decoration: ${({ isDone }) => (isDone ? "line-through" : "none")};
+`;
+
+export const StyledLink = styled(Link)`
+  color: teal;
+  text-decoration: ${({ isDone }) => (isDone ? "line-through" : "none")};
+  transition: 0.3s;
+  &:hover {
+    color: rgb(4, 201, 201);
+  }
 `;

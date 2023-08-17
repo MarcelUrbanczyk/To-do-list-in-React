@@ -1,5 +1,5 @@
 import { List, Task, DeleteButton, MarkDoneButton, Content } from "./styled";
-import { Link } from "react-router-dom";
+import { StyledLink } from "./styled";
 import {
   selectTasks,
   selectHideDone,
@@ -25,9 +25,9 @@ const TasksList = () => {
           >
             {task.done ? "✔" : ""}
           </MarkDoneButton>
-          <Content $isDone={task.done}>
-            <Link to={`/tasks/${task.id}`}>{task.content}</Link>
-          </Content>
+          <StyledLink isDone={task.done} to={`/tasks/${task.id}`}>
+            {task.content}
+          </StyledLink>
           <DeleteButton onClick={() => dispatch(removeTask(task.id))}>
             🗑
           </DeleteButton>

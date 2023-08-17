@@ -8,11 +8,16 @@ html {
   box-sizing: inherit;
 }
 
+main {
+  max-width: 1000px;
+  margin: auto;
+}
+
 body {
   background-color: #eee;
-  margin: auto;
-  max-width: 1000px;
   font-family: Montserrat, sans-serif;
   font-size: 24px;
   word-break: break-word;
+  margin: 0;
+  padding: 0;
 }

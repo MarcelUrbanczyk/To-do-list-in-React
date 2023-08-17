@@ -3,6 +3,7 @@ import { getTaskById } from "../tasksSlice";
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
+import { Strong } from "./styled";
 
 function Tasks() {
   const { id } = useParams();
@@ -13,7 +14,7 @@ function Tasks() {
 
       <Section
         title={task.content}
-        body={`Done: ${task.done ? "Yes" : "No"}`}
+        body={<Strong>Done: {task.done ? "Yes" : "No"}</Strong>}
       />
     </main>
   );

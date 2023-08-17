@@ -3,10 +3,10 @@ import Header from "../../common/Header";
 
 const Author = () => {
   return (
-    <>
-      <Header title="Marcel" />
-      <Section title="Author"></Section>
-    </>
+    <main>
+      <Header title="Author" />
+      <Section title="Marcel Urbańczyk"></Section>
+    </main>
   );
 };
 
