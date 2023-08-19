@@ -49,13 +49,10 @@ export const DeleteButton = styled.button`
   }
 `;
 
-export const Content = styled.span`
-  text-decoration: ${({ isdone }) => (isdone ? "line-through" : "none")};
-`;
-
 export const StyledLink = styled(Link)`
   color: teal;
-  text-decoration: ${({ isdone }) => (isdone ? "line-through" : "none")};
+  text-decoration: ${({ isdone }) =>
+    isdone === "true" ? "line-through" : "none"};
   transition: 0.3s;
   &:hover {
     color: rgb(4, 201, 201);
