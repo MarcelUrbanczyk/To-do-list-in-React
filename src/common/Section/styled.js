@@ -10,7 +10,7 @@ export const Header = styled.header`
   border: 1px solid #eee;
   display: grid;
   height: 80px;
-  grid-template-columns: auto 200px 200px;
+  grid-template-columns: auto 300px 200px 200px;
   @media (max-width: 960px) {
     height: auto;
     grid-template-columns: auto;

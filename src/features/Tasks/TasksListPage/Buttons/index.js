@@ -6,6 +6,7 @@ import {
   selectTasks,
   selectHideDone,
   selectAnyUndone,
+  fetchExampleTasks,
 } from "../../tasksSlice";
 
 const Buttons = () => {
@@ -18,6 +19,13 @@ const Buttons = () => {
   if (tasks.length > 0) {
     return (
       <>
+        <Button
+          onClick={() => {
+            dispatch(fetchExampleTasks());
+          }}
+        >
+          Download example tasks{" "}
+        </Button>
         <Button
           onClick={() => {
             dispatch(toggleHideDone());
@@ -37,6 +45,15 @@ const Buttons = () => {
       </>
     );
   }
+  return (
+    <Button
+      onClick={() => {
+        dispatch(fetchExampleTasks());
+      }}
+    >
+      Download example tasks{" "}
+    </Button>
+  );
 };
 
 export default Buttons;
