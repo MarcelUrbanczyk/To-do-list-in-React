@@ -1,4 +1,4 @@
-import { List, Task, DeleteButton, MarkDoneButton, Content } from "./styled";
+import { List, Task, DeleteButton, MarkDoneButton } from "./styled";
 import { StyledLink } from "./styled";
 import {
   selectTasks,
