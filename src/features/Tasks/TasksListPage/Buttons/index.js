@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Button } from "./styled";
+import { Button, Wrapper } from "./styled";
 import {
   toggleHideDone,
   markAllDone,
@@ -7,25 +7,39 @@ import {
   selectHideDone,
   selectAnyUndone,
   fetchExampleTasks,
+  deleteAll,
 } from "../../tasksSlice";
 
-const Buttons = () => {
+export const ExampleTasksButton = () => {
+  const dispatch = useDispatch();
+  return (
+    <Button
+      onClick={() => {
+        dispatch(fetchExampleTasks());
+      }}
+    >
+      Download example tasks{" "}
+    </Button>
+  );
+};
+
+export const TaskListButtons = () => {
   const hideDone = useSelector(selectHideDone);
   const isAnyUndone = useSelector(selectAnyUndone);
   const { tasks } = useSelector(selectTasks);
-
   const dispatch = useDispatch();
 
   if (tasks.length > 0) {
     return (
-      <>
+      <Wrapper>
         <Button
           onClick={() => {
-            dispatch(fetchExampleTasks());
+            dispatch(deleteAll());
           }}
         >
-          Download example tasks{" "}
+          Delete All
         </Button>
+
         <Button
           onClick={() => {
             dispatch(toggleHideDone());
@@ -42,18 +56,7 @@ const Buttons = () => {
         >
           Mark all done
         </Button>
-      </>
+      </Wrapper>
     );
   }
-  return (
-    <Button
-      onClick={() => {
-        dispatch(fetchExampleTasks());
-      }}
-    >
-      Download example tasks{" "}
-    </Button>
-  );
 };
-
-export default Buttons;

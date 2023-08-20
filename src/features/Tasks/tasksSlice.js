@@ -33,6 +33,9 @@ const tasksSlice = createSlice({
     setTasks: (state, { payload: tasks }) => {
       state.tasks = tasks;
     },
+    deleteAll: ({ tasks }) => {
+      tasks.splice(0, tasks.length);
+    },
   },
 });
 
@@ -53,6 +56,7 @@ export const {
   removeTask,
   fetchExampleTasks,
   setTasks,
+  deleteAll,
 } = tasksSlice.actions;
 
 export default tasksSlice.reducer;
