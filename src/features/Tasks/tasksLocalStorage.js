@@ -1,4 +1,4 @@
-export const saveAtLocalStorage = (tasks) =>
+export const saveAtLocalStorage = ({ tasks }) =>
   localStorage.setItem("tasks", JSON.stringify(tasks));
 
 export const getTasksFromLocalStorage = () =>
