@@ -1,14 +1,20 @@
 import styled from "styled-components";
 
+export const Wrapper = styled.div`
+  margin: auto 20px;
+`;
+
 export const Button = styled.button`
   background: none;
   border: none;
   cursor: pointer;
   color: teal;
+  align-items: flex-end;
   font-size: 18px;
   font-family: "Montserrat";
   transition: 0.3s;
-  margin: auto;
+  margin: 20px;
+  max-width: 300px;
   &:hover {
     color: rgb(4, 201, 201);
   }
