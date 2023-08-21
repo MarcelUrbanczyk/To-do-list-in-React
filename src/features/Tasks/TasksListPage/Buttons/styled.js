@@ -29,3 +29,10 @@ export const Button = styled.button`
     margin-bottom: 20px;
   }
 `;
+
+export const ErrorButton = styled(Button)`
+  color: crimson;
+  &:hover {
+    color: rgb(240, 14, 22);
+  }
+`;

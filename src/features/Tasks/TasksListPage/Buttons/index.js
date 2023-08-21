@@ -1,9 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { Button, Wrapper } from "./styled";
+import { Button, ErrorButton, Wrapper } from "./styled";
 import {
   toggleHideDone,
   markAllDone,
   selectTasks,
+  selectTasksState,
   selectHideDone,
   selectAnyUndone,
   fetchExampleTasks,
@@ -12,13 +13,29 @@ import {
 
 export const ExampleTasksButton = () => {
   const dispatch = useDispatch();
+  const tasksState = useSelector(selectTasksState);
+  if (tasksState === "error")
+    return (
+      <ErrorButton
+        onClick={() => {
+          dispatch(fetchExampleTasks());
+        }}
+      >
+        Error, try again later
+      </ErrorButton>
+    );
+
   return (
     <Button
+      disabled={tasksState === "loading"}
+      failure={tasksState === "error"}
       onClick={() => {
         dispatch(fetchExampleTasks());
       }}
     >
-      Download example tasks{" "}
+      {tasksState === "idle" || tasksState === "success"
+        ? "Download example tasks"
+        : "Loading..."}
     </Button>
   );
 };
