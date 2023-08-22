@@ -54,6 +54,15 @@ export const selectHideDone = (state) => selectTasks(state).hideDone;
 export const selectAnyUndone = (state) =>
   selectTasks(state).tasks.every(({ done }) => done);
 export const selectTasksState = (state) => selectTasks(state).state;
+export const selectTasksByQuery = (state, query) => {
+  if (!query || query.trim() === "") {
+    return state.tasks.tasks;
+  }
+
+  return selectTasks(state).tasks.filter(({ content }) =>
+    content.toUpperCase().includes(query.trim().toUpperCase())
+  );
+};
 
 export const getTaskById = (state, id) =>
   selectTasks(state).tasks.find((task) => task.id === id);
