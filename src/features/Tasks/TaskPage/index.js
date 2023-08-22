@@ -13,8 +13,8 @@ function Tasks() {
       <Header title="Task" />
 
       <Section
-        title={task.content}
-        body={<Strong>Done: {task.done ? "Yes" : "No"}</Strong>}
+        title={task ? task.content : "Sorry, task not found"}
+        body={task ? <Strong>Done: {task.done ? "Yes" : "No"}</Strong> : ""}
       />
     </main>
   );
