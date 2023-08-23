@@ -15,6 +15,10 @@ export const Header = styled.header`
   @media (max-width: 960px) {
     height: auto;
   }
+  @media (max-width: 780px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const HeaderText = styled.h2`

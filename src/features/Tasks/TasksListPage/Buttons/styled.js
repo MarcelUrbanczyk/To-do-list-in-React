@@ -28,6 +28,10 @@ export const Button = styled.button`
   @media (max-width: 960px) {
     margin-bottom: 20px;
   }
+  @media (max-width: 780px) {
+    flex-basis: 99%;
+    max-width: unset;
+  }
 `;
 
 export const ErrorButton = styled(Button)`

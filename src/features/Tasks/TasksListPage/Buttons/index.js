@@ -48,7 +48,7 @@ export const TaskListButtons = () => {
 
   if (tasks.length > 0) {
     return (
-      <Wrapper>
+      <>
         <Button
           onClick={() => {
             dispatch(deleteAll());
@@ -73,7 +73,7 @@ export const TaskListButtons = () => {
         >
           Mark all done
         </Button>
-      </Wrapper>
+      </>
     );
   }
 };
