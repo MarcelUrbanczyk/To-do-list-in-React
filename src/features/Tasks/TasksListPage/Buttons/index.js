@@ -28,7 +28,7 @@ export const ExampleTasksButton = () => {
   return (
     <Button
       disabled={tasksState === "loading"}
-      failure={tasksState === "error"}
+      $failure={tasksState === "error"}
       onClick={() => {
         dispatch(fetchExampleTasks());
       }}
