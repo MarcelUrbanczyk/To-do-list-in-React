@@ -23,8 +23,8 @@ export const Header = styled.header`
 
 export const HeaderText = styled.h2`
   font-size: 32px;
-  margin: 20px;
   grid-row-start: 1;
+  margin: 20px;
   white-space: nowrap;
 `;
 
@@ -32,6 +32,6 @@ export const Container = styled.div`
   align-items: center;
   background: white;
   border: 1px solid #eee;
-  min-height: 100px;
   justify-content: center;
+  min-height: 100px;
 `;

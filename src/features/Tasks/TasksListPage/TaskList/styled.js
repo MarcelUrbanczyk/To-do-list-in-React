@@ -9,8 +9,8 @@ export const Task = styled.li`
   border-bottom: 2px solid #eee;
   display: grid;
   font-size: 18px;
-  margin: 0 20px 0 20px;
   grid-template-columns: auto 1fr auto;
+  margin: 0 20px 0 20px;
   ${({ hidden }) =>
     hidden &&
     css`
@@ -19,31 +19,32 @@ export const Task = styled.li`
 `;
 
 export const MarkDoneButton = styled.button`
+  background-color: green;
   border: none;
   color: white;
   cursor: pointer;
   font-size: 18px;
   height: 30px;
   margin: 10px;
-  width: 30px;
   transition: 0.3s;
-  background-color: green;
   text-decoration: none;
+  width: 30px;
+
   &:hover {
     background-color: #05aa05;
   }
 `;
 
 export const DeleteButton = styled.button`
+  background-color: #ff0048;
   border: none;
   color: white;
   cursor: pointer;
   font-size: 18px;
   height: 30px;
   margin: 10px;
-  width: 30px;
   transition: 0.3s;
-  background-color: #ff0048;
+  width: 30px;
   &:hover {
     background-color: #b90437;
   }
