@@ -14,12 +14,13 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   display: inline;
-  margin: 10px;
+  margin: 10px 20px;
 `;
 
 export const StyledLink = styled(NavLink)`
   color: white;
   text-decoration: none;
+
   &.active {
     font-weight: 700;
   }
